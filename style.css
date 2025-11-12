@@ -1,0 +1,325 @@
+@import url('https:fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+    font-family:'Montserrat', sans-serif;
+}
+
+
+
+body{
+    background: linear-gradient(#636162, #b1afaf);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main{
+    position: relative;
+    width: 100%; 
+    max-width: 900px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px ;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    z-index: 1;
+    box-shadow: 0 35px 55px rgb(0,0,0,0.1);
+}
+
+.left{
+    position: relative;/* Important: gives its own stacking context */
+    background: #0B1A2A; 
+}
+
+.right{
+    width: 450px;
+    float: left;
+}
+
+
+.title{
+    color: #ffffff;
+}
+
+
+.profile-img{
+    height: 300px;
+    width: 300px;
+    background-image: url(./IMG_0934.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-bottom: 3px solid #F2B705;
+    position: relative;
+
+}
+
+.profileName{
+    color: #F2B705;
+    background-color: rgba(128, 128, 128, 0.8); /* Semi-transparent gray */
+    position: absolute; /* ADD THIS */
+    bottom: 0; /* CHANGED from 20px to 0 to align with bottom */
+    left: 0; /* ADD THIS */
+    width: 100%; /* ADD THIS to span full width */
+    text-align: center; /* ADD THIS to center text */
+    padding: 10px 0; /* ADD THIS for spacing */
+    margin: 0; /* ADD THIS */
+}
+
+.box-1{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.heading{
+    position: relative;
+    background-color:#F2B705;
+    padding: 7px;
+    color: #1C1C1C;
+    text-align: left;
+    padding-left: 20px;
+    margin-right: -13px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    overflow: visible;
+}
+
+.heading::after{
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 19px;
+    background-color: #f2b705;
+    left: 291px;
+    top: 21px;
+    transform: rotate(50deg);
+    z-index: -1;
+}
+
+.heading p{
+    font-style: italic;
+}
+
+.contact{
+    margin-top: 30px;
+}
+
+.contacts{
+    position: relative;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.pspace{
+    padding: 0 25px;
+}
+
+.p1{
+    padding-top: 10px;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight:200;
+}
+
+.iconz{
+    width: 100%;
+}
+
+span.p1{
+    width: 40px;
+}
+
+.language{
+    position: relative;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar{
+    flex-grow: 1;
+    height: 12px;
+    background-color: rgba(255, 255,255, 0.12);
+    overflow: hidden;
+    margin-right: 10px;
+    /* width: 80%; */
+}
+
+.fill{
+    height: 100%;
+    background-color: #f2b705;
+}
+
+.skill-container{
+    width: 90%;
+    border-color: #4d4d4d;
+    margin: 0px 10px;
+}
+
+/************* STYLING THE RIGHT *************/
+
+.right {
+  position: relative;
+  z-index: 0;
+  width: 100%; /* fit inside, accounting for margins */
+  margin-left: 30px;
+  width: calc(100% - 30px);
+  overflow: hidden; /* hides any overflow from headings */
+  box-sizing: border-box;
+  background: #FAFAFA;
+}
+
+.heading2{ 
+    background-color: #092442; 
+    padding: 7px; text-align: left; 
+    padding-left: 20px; 
+    margin-bottom: 10px; 
+    letter-spacing: 2px; 
+    color: #F2B705; 
+    width: 100%;
+    position: relative;
+}
+
+.boxed2 {
+  width: 100%;
+  overflow: visible; 
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+.box2 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.heading2::after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 19px;
+    background-color: #0B1A2A;
+    left: 1px;
+    top: 18.5px;
+    transform: rotate(20deg);
+    z-index: -1;
+}
+
+.date{
+   color:#6b7280 ;
+}
+
+
+.rightParagraphs{
+    color: black;
+    font-weight: 500;
+    font-size:13px;
+    margin-top: 5px;
+    margin: 0 15px 10px 30px;
+    line-height: 16px;
+    letter-spacing: 0.3px;
+}
+.university th,
+.university td{
+    border: none;
+    text-align: left;
+    padding: 0;
+    display: block;
+
+    color: black;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.3px;
+    margin-left:30px;
+}
+
+.university tr{
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contact2{
+   margin-top: 20px;
+}
+
+.Experience th{
+    font-weight: bold;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+.Experience th,
+.Experience td{
+    border: none;
+    text-align: left;
+    padding: 0;
+    display: block;
+    margin-left:30px;
+}
+
+.Experience td{
+    font-weight: 100;
+    font-size: small;
+}
+
+.hobbies{
+
+}
+
+
+
+
+
+@media(max-width:1000px){
+    .main{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .img-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .profile-img{
+        border-radius: 50%;
+        border: 1px solid #F2B705;
+    }
+    .heading::after{
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 19px;
+        background-color:#F2B705;
+        left: 355px;
+        top: 25px;
+        transform: rotate(30deg);
+        z-index: -1;
+    }
+}
+
+@media(max-width:600px){
+    .about .box{
+        flex-direction: column;
+    }
+    .about .box .year-company{
+        min-width: 150px;
+        margin-bottom: 5px;
+    }
+    .interest ul{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .skills .box{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
